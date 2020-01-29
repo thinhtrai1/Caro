@@ -52,7 +52,7 @@ class AdapterCaro(var mContext: Context, var mList: ArrayList<Int>) :
         var mActivity = mContext as MainActivity
 
         holder.mLayout.setOnClickListener {
-            if (MainActivity.isAttack && mActivity.mList[position] == 0) {
+            if (!MainActivity.isViewMode && MainActivity.isAttack && mActivity.mList[position] == 0) {
                 if (hasWin(mActivity.tickList, position)) {
                     var attack = Attack()
                     attack.deviceId = MainActivity.deviceId
