@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,25 +10,24 @@
         android:id="@+id/mRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_recycler" />
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_item_previous" />
 
     <Button
         android:id="@+id/mBtnAgain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="again" />
+        android:text="@string/again" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:text="Chessboard: " />
+            android:layout_height="wrap_content"
+            android:text="@string/chessboard" />
 
         <Spinner
             android:id="@+id/mSpinner"
@@ -37,17 +35,11 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/mTvViewMode"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/mTvViewMode"
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom" />
-    </LinearLayout>
-
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="#F00" />
 </LinearLayout>

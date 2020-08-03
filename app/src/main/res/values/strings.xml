@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Caro</string>
+    <string name="again">again</string>
+    <string name="chessboard">Chessboard:&#160;</string>
+    <string name="you_are_in_view_mode">You are in View mode</string>
 </resources>
